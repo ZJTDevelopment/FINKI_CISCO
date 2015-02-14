@@ -5,6 +5,8 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+import com.google.gson.Gson;
+
 import models.UserDetails;
 
 public class UserDetailsDao {
@@ -21,8 +23,9 @@ public class UserDetailsDao {
 				UserDetails user = new UserDetails();
 				user.setEmail(rs.getString("email"));
 				user.setName(rs.getString("name"));
-				user.setPassword(rs.getString("password"));
+				user.setPassword(rs.getString("pass"));
 				user.setSurname(rs.getString("surname"));
+				System.out.println(new Gson().toJson(user));
 				if (!user.getPassword().equals(pass))
 					return null;
 				return user;
