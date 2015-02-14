@@ -2,8 +2,8 @@
     <wb-module deploy-name="FINKI_CISCO">
         <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <property name="context-root" value="FINKI_CISCO"/>
         <property name="java-output-path" value="/FINKI_CISCO/target/classes"/>
     </wb-module>
